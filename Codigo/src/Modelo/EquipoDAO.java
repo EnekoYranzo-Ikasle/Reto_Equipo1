@@ -1,4 +1,5 @@
 package Modelo;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +11,7 @@ public class EquipoDAO {
     public EquipoDAO() {
         this.listaEquipos = new ArrayList<>();
     }
-  
+
     public List<Equipo> obtenerEquipos() {
         return listaEquipos;
     }
@@ -23,22 +24,22 @@ public class EquipoDAO {
         listaEquipos.remove(equipo);
     }
 
-    private Optional<Equipo> buscarEquipoPorCod(String idEquipo){
-         Optional<Equipo> buscarEquip = listaEquipos.stream().filter(equipoABuscar-> equipoABuscar.getCodEquipo().equals(idEquipo)).findFirst();
-         return buscarEquip;
+    private Optional<Equipo> buscarEquipoPorCod(String idEquipo) {
+        Optional<Equipo> buscarEquip = listaEquipos.stream().filter(equipoABuscar -> equipoABuscar.getCodEquipo().equals(idEquipo)).findFirst();
+        return buscarEquip;
     }
 
-    public Equipo obtenerEquipo(String idEquipo){
+    public Equipo obtenerEquipo(String idEquipo) {
         Optional<Equipo> buscarEquip = buscarEquipoPorCod(idEquipo);
         return buscarEquip.orElse(null);
     }
 
-    public void añadirJugador(Jugador jugador, String idEquipo){
+    public void añadirJugador(Jugador jugador, String idEquipo) {
         Optional<Equipo> buscarEquip = buscarEquipoPorCod(idEquipo);
         buscarEquip.get().altaJugador(jugador);
     }
 
-    public void eliminarJugador(Jugador jugador, String idEquipo){
+    public void eliminarJugador(Jugador jugador, String idEquipo) {
         Optional<Equipo> buscarEquip = buscarEquipoPorCod(idEquipo);
         buscarEquip.get().bajaJugador(jugador);
     }

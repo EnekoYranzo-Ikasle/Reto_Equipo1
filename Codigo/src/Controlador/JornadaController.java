@@ -26,7 +26,7 @@ public class JornadaController {
 
             jornadaDAO.generarJornadas(numJornadas, equipoDAO.obtenerEquipos(), enfrentamientoDAO);
 
-        }catch (Exception e) {
+        } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
         }
     }
@@ -36,8 +36,8 @@ public class JornadaController {
             String codJornada = JOptionPane.showInputDialog(null, "Escribe el código de jornada que deseas borrar");
 
             jornadaDAO.eliminarJornadaPorCod(codJornada);
-            
-        }catch (Exception e) {
+
+        } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error " + e);
         }
     }
@@ -54,7 +54,7 @@ public class JornadaController {
 
             jornadaDAO.modificarJornadaPorCod(j);
 
-        }catch (Exception e) {
+        } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error " + e);
         }
     }

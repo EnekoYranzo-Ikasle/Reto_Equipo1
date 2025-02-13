@@ -8,6 +8,7 @@ public class Competicion {
     private String estado;
     private Date fecha_fin;
     private Jornada jornada;
+
     public Competicion() {
 
     }

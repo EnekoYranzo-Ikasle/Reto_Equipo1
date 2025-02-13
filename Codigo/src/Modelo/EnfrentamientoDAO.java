@@ -10,7 +10,7 @@ public class EnfrentamientoDAO {
         ListaEnfrentamientos = new ArrayList<Enfrentamiento>();
     }
 
-    public void guardarEnfrentamientos(Enfrentamiento e){
+    public void guardarEnfrentamientos(Enfrentamiento e) {
         ListaEnfrentamientos.add(e);
     }
 

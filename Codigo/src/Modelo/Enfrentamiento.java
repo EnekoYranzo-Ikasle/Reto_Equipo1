@@ -59,7 +59,7 @@ public class Enfrentamiento {
         this.equipo2 = equipo2;
     }
 
-    public String toString(){
+    public String toString() {
         return equipo1.getNombreEquipo() + " vs " + equipo2.getNombreEquipo() + " Hora: " + hora;
     }
 }

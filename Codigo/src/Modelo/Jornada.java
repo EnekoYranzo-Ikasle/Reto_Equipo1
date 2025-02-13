@@ -30,7 +30,7 @@ public class Jornada {
         ListaEnfrentamientos.add(enfrentamiento);
     }
 
-//  Getter and Setter
+    //  Getter and Setter
     public String getCodJornada() {
         return codJornada;
     }

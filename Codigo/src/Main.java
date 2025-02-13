@@ -164,8 +164,10 @@ public class Main {
 
                                                     switch (opcion013) {
                                                         case 0 -> jornadaController.borrarJornada(); // Borrar Jornada
-                                                        case 1 -> jornadaController.modificarJornada(); // Modificar Jornada
-                                                        case 2 -> jornadaController.mostrarJornadas(); // Mostrar Jornadas
+                                                        case 1 ->
+                                                                jornadaController.modificarJornada(); // Modificar Jornada
+                                                        case 2 ->
+                                                                jornadaController.mostrarJornadas(); // Mostrar Jornadas
                                                     }
                                                 }
                                             }
@@ -188,11 +190,13 @@ public class Main {
                                             break;
                                         }
                                     }
-                                }break;
+                                }
+                                break;
 //                                case 1: {} // Cerrar Etapa
                                 case 2: {
-                                  jornadaController.generarJornada(); // Generar Calendario
-                                }break;
+                                    jornadaController.generarJornada(); // Generar Calendario
+                                }
+                                break;
 //                                case 3: {} // Introducir Resultados
 //                                case 4: {} // Ver todos los informes
                             }

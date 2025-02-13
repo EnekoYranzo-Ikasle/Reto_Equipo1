@@ -30,7 +30,7 @@ public class JornadaDAO {
                 // Verificar que no se hayan enfrentado antes.
                 if (!e1.equals(e2) && !enfrentados.contains(e1.getNombreEquipo() + e2.getNombreEquipo()) &&
                         !enfrentados.contains(e2.getNombreEquipo() + e1.getNombreEquipo())) {
-                // Creamos los objetos y los añadimos al ArrayList
+                    // Creamos los objetos y los añadimos al ArrayList
                     Enfrentamiento enf = new Enfrentamiento("E" + i + jornada.getListaEnfrentamientos().size(), e1, e2, horaInicial);
 
                     jornada.addEnfrentamiento(enf);
